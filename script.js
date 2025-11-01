@@ -13,7 +13,7 @@ const translations = {
 
     // About
     name: "Mikko F., PhD",
-    tagline: "LANGUAGE • TECHNOLOGY • EDUCATION",
+    tagline: "LANGUAGE • TECH • EDUCATION",
     about_text: `Polyglot, linguist and educator with a passion for applied linguistics, language digitalisation and technology, and language policy for minor and endangered languages. Currently lecturing at Mongolia International University, I have studied at several European universities on various scholarships, lived in over ten countries, and have a background combining academic, freelance (translator, Spanish tutor) and corporate experience. I am also a former Blue Book trainee at the European Commission.<br><br>
     Besides linguistics, I have knowledge of programming for digital humanities and NLP, music theory, and indie game development. I follow the <i>tri-dharma</i> principle, developing myself, my institution, and my students and the local community. Future projects focus on developing digital tools for endangered languages, research in L2 education, and promoting academic leadership.`,
     hashtags: "#polyglot #education #linguistics #translation #lexicography #research #language_teaching #language_policy #project_management #language_technology #nlp #music_theory #content_writing #public_speaking",
