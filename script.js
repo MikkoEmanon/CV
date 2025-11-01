@@ -356,7 +356,7 @@ function updateContent() {
       el.innerHTML = translations[currentLang][key];
     }
   });
-  document.title = 'Mikko F., PhD — CV';
+  document.title = 'Mikko CV';
 }
 
 window.addEventListener('load', () => {
