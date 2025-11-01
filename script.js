@@ -2,7 +2,6 @@ let currentLang = 'en';
 
 const translations = {
   en: {
-    // Navigation
     about: "About",
     academics: "Academics",
     cv: "CV",
@@ -11,14 +10,12 @@ const translations = {
     skills: "Skills",
     contact: "Contact",
 
-    // About
     name: "Mikko F., PhD",
     tagline: "LANGUAGE • TECH • EDUCATION",
     about_text: `Polyglot, linguist and educator with a passion for applied linguistics, language digitalisation and technology, and language policy for minor and endangered languages. Currently lecturing at Mongolia International University, I have studied at several European universities on various scholarships, lived in over ten countries, and have a background combining academic, freelance (translator, Spanish tutor) and corporate experience. I am also a former Blue Book trainee at the European Commission.<br><br>
     Besides linguistics, I have knowledge of programming for digital humanities and NLP, music theory, and indie game development. I follow the <i>tri-dharma</i> principle, developing myself, my institution, and my students and the local community. Future projects focus on developing digital tools for endangered languages, research in L2 education, and promoting academic leadership.`,
     hashtags: "#polyglot #education #linguistics #translation #lexicography #research #language_teaching #language_policy #project_management #language_technology #nlp #music_theory #content_writing #public_speaking",
 
-    // Academics
     academics_title: "Academic Experience",
     ku_name: "Kyrgyzstan University of Language and Culture",
     ku_position: "Lecturer",
@@ -39,7 +36,6 @@ const translations = {
     projects_title: "Projects",
     project_text: "— Check out my little multilingual translation app portfolio 🙂",
 
-    // Studies
     studies_title: "Studies",
     phd_degree: "PhD: Language Policy and Regulation",
     ehu_name: "University of the Basque Country",
@@ -72,7 +68,6 @@ const translations = {
     conf_memorial: "The Pandemic, Technology, and Language Revitalization, Memorial University, online workshop",
     conf_wiko: "Alfried Krupp Wissenschaftskolleg",
 
-    // Work
     work_title: "Work Experience (non-Academic)",
     tp_role: "data annotator",
     greece: "Greece",
@@ -118,7 +113,6 @@ const translations = {
     podgorica: "Podgorica",
     aiesec_dates: "February–March 2017",
 
-    // Skills
     skills_title: "Skills",
     lang_title: "Languages",
     native_label: "Native:",
@@ -135,21 +129,18 @@ const translations = {
     wikipedia_skill: "Wikipedia articles translation (in Greek)",
     hobbies: "Hiking, Solo travelling, Cycling",
 
-    // Contact
     contact_title: "Contact",
     email_label: "Your email",
     topic_label: "Topic",
     message_label: "Message",
     send_button: "Send",
 
-    // Footer
     pdf_version: "PDF version",
     linkedin: "LinkedIn",
     instagram: "Instagram",
     location: "📍 Thessaloniki, Greece"
   },
   es: {
-    // Navigation
     about: "Sobre mí",
     academics: "Docencia",
     cv: "CV",
@@ -158,14 +149,12 @@ const translations = {
     skills: "Competencias",
     contact: "Contacto",
 
-    // About
     name: "Mikko F., PhD",
     tagline: "IDIOMA • TECNOLOGÍA • EDUCACIÓN",
     about_text: `Lingüista, políglota y educador apasionado por la lingüística aplicada, la digitalización y la tecnología de lenguas, y la política lingüística para lenguas minoritarias/amenazadas. Actualmente imparto clases en la Universidad Internacional de Mongolia; he estudiado en varias universidades europeas con becas diversas, he vivido en más de diez países y mi trayectoria combina experiencia académica, freelance (traductor, tutor de español) y corporativa; también he sido becario Blue Book en la Comisión Europea.<br><br>
     Además de la lingüística, tengo conocimientos de programación para humanidades digitales y PLN, teoría musical y desarrollo de videojuegos indie. Sigo el principio <i>tri-dharma</i>, desarrollándome a mí mismo, a mi institución y a mis alumnos y la comunidad local. Mis proyectos futuros se centran en el desarrollo de herramientas digitales para lenguas amenazadas, investigación en enseñanza de L2 y promoción del liderazgo académico.`,
     hashtags: "#polyglot #education #linguistics #translation #lexicography #research #language_teaching #language_policy #project_management #language_technology #nlp #music_theory #content_writing #public_speaking",
 
-    // Academics
     academics_title: "Experiencia Académica",
     ku_name: "Universidad de Lengua y Cultura de Kirguistán",
     ku_position: "docente",
@@ -186,7 +175,6 @@ const translations = {
     projects_title: "Proyectos",
     project_text: "— ¡Echen un vistazo a mi pequeña app de traducción multilingüe! 🙂",
 
-    // Studies
     studies_title: "Estudios",
     phd_degree: "Doctorado: Política y Regulación Lingüística",
     ehu_name: "Universidad del País Vasco",
@@ -219,7 +207,6 @@ const translations = {
     conf_memorial: "The Pandemic, Technology, and Language Revitalization, Memorial University, taller en línea",
     conf_wiko: "Alfried Krupp Wissenschaftskolleg",
 
-    // Work
     work_title: "Experiencia Laboral (no académica)",
     tp_role: "anotador de datos",
     greece: "Grecia",
@@ -265,7 +252,6 @@ const translations = {
     podgorica: "Podgorica",
     aiesec_dates: "febrero–marzo 2017",
 
-    // Skills
     skills_title: "Competencias",
     lang_title: "Idiomas",
     native_label: "Nativo:",
@@ -282,14 +268,12 @@ const translations = {
     wikipedia_skill: "Traducción de artículos de Wikipedia (al griego)",
     hobbies: "Viajes en solitario, Senderismo, Ciclismo",
 
-    // Contact
     contact_title: "Contacto",
     email_label: "Tu correo",
     topic_label: "Asunto",
     message_label: "Mensaje",
     send_button: "Enviar",
 
-    // Footer
     pdf_version: "Versión PDF",
     linkedin: "LinkedIn",
     instagram: "Instagram",
@@ -297,7 +281,6 @@ const translations = {
   }
 };
 
-// --- Rest of the script remains unchanged ---
 const sections = {
   about: document.getElementById('about'),
   academics: document.getElementById('academics'),
