@@ -32,7 +32,8 @@ const translations = {
     course_research_methods: "Research Methodology",
     course_language_policy: "Language Policy",
     course_translation: "Translation",
-    lessons_text: "These courses combine theory with hands-on practice, including corpus building, NLP tools, and field research.",
+    lessons_text_p1: "These courses combine theory with hands-on practice, including corpus building, NLP tools, and field research.",
+    lessons_text_p2: "Students can access course material in 👉 this LMS"
     projects_title: "Projects",
     project_text: "— Check out my little multilingual translation app portfolio 🙂",
 
@@ -171,7 +172,8 @@ const translations = {
     course_research_methods: "Metodología de la investigación",
     course_language_policy: "Política lingüística",
     course_translation: "Traducción",
-    lessons_text: "Estos cursos combinan teoría con práctica aplicada, incluyendo construcción de corpus, herramientas de PLN e investigación de campo.",
+    lessons_text_p1: "Estos cursos combinan teoría con práctica aplicada, incluyendo construcción de corpus, herramientas de PLN e investigación de campo.",
+    lessons_text_p2: "Los estudiantes pueden acceder al material de los cursos en 👉 este LMS."
     projects_title: "Proyectos",
     project_text: "— ¡Echen un vistazo a mi pequeña app de traducción multilingüe! 🙂",
 
