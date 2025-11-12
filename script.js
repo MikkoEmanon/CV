@@ -204,7 +204,7 @@ const translations = {
     erasmus_dates: "2013",
     honourable_mention: "(mención honorífica)",
     certs_title: "Certificados y Cursos",
-    conf_title: "Conferencias (asistencia; selección)",
+    conf_title: "Conferencias (asistencia, selección)",
     conf_ec: "Comisión Europea",
     conf_mt: "Traducción automática — Lenguas de bajos recursos, taller en línea",
     conf_roma: "Universidad Roma Tre",
