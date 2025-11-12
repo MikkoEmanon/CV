@@ -35,7 +35,8 @@ const translations = {
     lessons_text_p1: "These courses combine theory with hands-on practice, including corpus building, NLP tools, and field research.",
     lessons_text_p2: 'Students can access course material in 👉 <a href="https://mikko-lms.netlify.app" target="_blank" rel="noopener noreferrer">this LMS</a>.',
     projects_title: "Projects",
-    project_text: "— Check out my little multilingual translation app portfolio 🙂",
+    project_text: "— check out my little multilingual translation app portfolio 🙂",
+    project_lexikyrgyz: "— demo version of a Kyrgyz-English dictionary 🇰🇬",
 
     studies_title: "Studies",
     phd_degree: "PhD: Language Policy and Regulation",
@@ -176,6 +177,7 @@ const translations = {
     lessons_text_p2: 'Los estudiantes pueden acceder al material de los cursos en 👉 <a href="https://mikko-lms.netlify.app" target="_blank" rel="noopener noreferrer">este LMS</a>.',
     projects_title: "Proyectos",
     project_text: "— ¡Echen un vistazo a mi pequeña app de traducción multilingüe! 🙂",
+    project_lexikyrgyz: "— versión demo de un diccionario kirguís-inglés 🇰🇬",
 
     studies_title: "Estudios",
     phd_degree: "Doctorado: Política y Regulación Lingüística",
