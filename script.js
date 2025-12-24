@@ -11,7 +11,7 @@ const translations = {
     contact: "Contact",
 
     name: "Mikko F., PhD",
-    tagline: "LANGUAGE • TECH • EDUCATION",
+    tagline: "TECHNOLINGUIST: LANGUAGE • TECH • EDUCATION",
     about_text: `Polyglot, linguist and educator with a passion for applied linguistics, language digitalisation and technology, and language policy for minor and endangered languages. Currently lecturing at Mongolia International University, I have studied at several European universities on various scholarships, lived in over ten countries, and have a background combining academic, freelance (translator, Spanish tutor) and corporate experience. I am also a former Blue Book trainee at the European Commission.<br><br>
     Besides linguistics, I have knowledge of programming for digital humanities and NLP, music theory, and indie game development. I follow the <i>tri-dharma</i> principle, developing myself, my institution, and my students and the local community. Future projects focus on developing digital tools for endangered languages, research in L2 education, and promoting academic leadership.`,
     hashtags: "#polyglot #education #linguistics #translation #lexicography #research #language_teaching #language_policy #project_management #language_technology #nlp #music_theory #content_writing #public_speaking",
@@ -151,7 +151,7 @@ const translations = {
     contact: "Contacto",
 
     name: "Mikko F., PhD",
-    tagline: "IDIOMA • TECNOLOGÍA • EDUCACIÓN",
+    tagline: "TECNOLINGÜÍSTA: IDIOMA • TECNOLOGÍA • EDUCACIÓN",
     about_text: `Lingüista, políglota y educador apasionado por la lingüística aplicada, la digitalización y la tecnología de lenguas, y la política lingüística para lenguas minoritarias/amenazadas. Actualmente imparto clases en la Universidad Internacional de Mongolia; he estudiado en varias universidades europeas con becas diversas, he vivido en más de diez países y mi trayectoria combina experiencia académica, freelance (traductor, tutor de español) y corporativa; también he sido becario Blue Book en la Comisión Europea.<br><br>
     Además de la lingüística, tengo conocimientos de programación para humanidades digitales y PLN, teoría musical y desarrollo de videojuegos indie. Sigo el principio <i>tri-dharma</i>, desarrollándome a mí mismo, a mi institución y a mis alumnos y la comunidad local. Mis proyectos futuros se centran en el desarrollo de herramientas digitales para lenguas amenazadas, investigación en enseñanza de L2 y promoción del liderazgo académico.`,
     hashtags: "#polyglot #education #linguistics #translation #lexicography #research #language_teaching #language_policy #project_management #language_technology #nlp #music_theory #content_writing #public_speaking",
