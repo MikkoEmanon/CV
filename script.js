@@ -128,7 +128,6 @@ const translations = {
     misc_title: "Misc.",
     music_skill: "Transverse flute (intermediate), Music theory",
     wikipedia_skill: "Wikipedia articles translation (in Greek)",
-    representative_skill: "Representing Ionian University postgraduate students at the departmental assemblies",
     hobbies: "Hiking, Solo travelling, Cycling",
 
     contact_title: "Contact",
@@ -269,7 +268,6 @@ const translations = {
     misc_title: "Otras",
     music_skill: "Flauta traversa (nivel intermedio), Teoría musical",
     wikipedia_skill: "Traducción de artículos de Wikipedia (al griego)",
-    representative_skill: "Representando a los estudiantes de posgrado de la Universidad Jónica en las asambleas departamentales",
     hobbies: "Viajes en solitario, Senderismo, Ciclismo",
 
     contact_title: "Contacto",
