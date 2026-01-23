@@ -252,9 +252,36 @@ footer {
 footer a { color: var(--link); text-decoration: none; font-weight: 500; }
 footer a:hover { text-decoration: underline; }
 
+@media (max-width: 700px) {
+  .profile-photo {
+    float: none;
+    display: block;
+    margin: 0 auto 1.8rem;
+    max-width: 260px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+
+  .tagline {
+    text-align: center;
+    margin: 0.4rem 0 1.8rem;
+  }
+}
+
 @media (max-width: 600px) {
-  .profile-photo { float: none; margin: 0 auto 1.4rem; max-width: 280px; }
-  .lessons-grid { grid-template-columns: 1fr 1fr; }
-  .academics-img { width: 100%; }
-  .skills-grid > div { margin-bottom: 2rem; }
+  .profile-photo {
+    max-width: 240px;
+  }
+  .lessons-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .academics-img {
+    width: 100%;
+  }
+  .skills-grid > div {
+    margin-bottom: 2rem;
+  }
 }
