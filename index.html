@@ -1,230 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Mikko PhD — Technolinguist Linguistics Technology Education">
-  <title>Mikko CV</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Mikko PhD — Technolinguist Linguistics Technology Education">
+<title>Mikko CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+<script src="script.js" defer></script>
 </head>
 <body>
-  <div class="page-wrapper">
-    <header>
-      <nav>
-        <div class="nav-links">
-          <a href="#about" class="nav-link" data-key="about">About</a>
-          <a href="#academics" class="nav-link" data-key="academics">Academics</a>
-          <div class="dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-key="cv">CV</a>
-            <div class="dropdown-menu">
-              <a href="#studies" class="dropdown-item" data-key="studies">Studies</a>
-              <a href="#work" class="dropdown-item" data-key="work">Work Experience</a>
-              <a href="#skills" class="dropdown-item" data-key="skills">Skills</a>
-            </div>
-          </div>
-          <a href="#contact" class="nav-link" data-key="contact">Contact</a>
-        </div>
-
-        <div class="lang-switcher">
-          <button id="lang-toggle" aria-label="Switch language">🌐</button>
-          <div id="lang-dropdown" class="lang-dropdown hidden">
-            <button class="lang-option" data-lang="en">English 🇬🇧</button>
-            <button class="lang-option" data-lang="es">Español 🇪🇸</button>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <section id="about" class="content-section">
-        <h1 data-key="name">Mikko F., PhD</h1>
-        <div class="profile-photo">
-          <img src="mikko_photo.jpg" alt="Mikko Fidias">
-        </div>
-        <p class="tagline" data-key="tagline">TECHNOLINGUIST:<br>LANGUAGE • TECH • EDUCATION</p>
-        <p data-key="about_text">
-          Polyglot, linguist and educator with a passion for applied linguistics, language digitalisation and technology, and language policy for minor and endangered languages. Currently lecturing at Mongolia International University, I have studied at several European universities on various scholarships, lived in over ten countries, and have a background combining academic, freelance (translator, Spanish tutor) and corporate experience. I am also a former Blue Book trainee at the European Commission.<br><br>
-          Besides linguistics, I have knowledge of programming for digital humanities and NLP, music theory, and indie game development. I follow the <i>tri-dharma</i> principle, developing myself, my institution, and my students and the local community. Future projects focus on developing digital tools for endangered languages, research in L2 education, and promoting academic leadership.
-        </p>
-        <p class="hashtags left-align" data-key="hashtags">#polyglot #education #linguistics #translation #lexicography #research #language_teaching #language_policy #project_management #language_technology #nlp #music_theory #content_writing #public_speaking</p>
-      </section>
-
-      <section id="academics" class="content-section hidden">
-        <h2 data-key="academics_title">Academic Experience</h2>
-        <ul class="timeline">
-          <li><strong><a href="https://kiuc.kg/en/" target="_blank" rel="noopener"><span data-key="ku_name">Kyrgyzstan University of Language and Culture</span></a></strong>, <span data-key="ku_position">Lecturer</span> — <span data-key="ku_location">Shopokov</span> <em>(<span data-key="ku_dates">Sep 2024–Jun 2025</span>)</em></li>
-          <li><strong><a href="https://www.miu.edu.mn" target="_blank" rel="noopener"><span data-key="miu_name">Mongolia International University</span></a></strong>, <span data-key="miu_position">Lecturer</span> — <span data-key="remote">remote</span> <em>(<span data-key="miu_dates">Aug 2024–present</span>)</em></li>
-        </ul>
-
-        <h2 data-key="lessons_title">Courses Taught</h2>
-        <div class="lessons-grid">
-          <span data-key="course_linguistics">Linguistics</span>
-          <span data-key="course_language_tech">Language Technology</span>
-          <span data-key="course_l2_methods">L2 Teaching Methods</span>
-          <span data-key="course_research_methods">Research Methodology</span>
-          <span data-key="course_language_policy">Language Policy</span>
-          <span data-key="course_translation">Translation</span>
-          <span data-key="course_spanish">Spanish Language</span>
-        </div>
-   
-        <p data-key="lessons_text_p1">
-          Students can access course material in 👉 <a href="https://mikko-lms.netlify.app" target="_blank" rel="noopener noreferrer">this LMS</a>.
-        </p>
-   
-        <h2 data-key="projects_title">Projects</h2>
-        <ul class="projects-list">
-          <li>
-            <a href="https://mikkoemanon.github.io/PolyglotTranslator/" target="_blank" rel="noopener" class="project-link">
-              <u>Polyglot Translator</u>
-            </a>
-            &nbsp;<span data-key="project_text">— check out my little multilingual translation app portfolio 🙂</span>
-          </li>
-          <li>
-            <a href="https://lexidictionary.github.io/LexiKyrgyz/" target="_blank" rel="noopener" class="project-link">
-              <u>LexiKyrgyz</u>
-            </a>
-    &nbsp;<span data-key="project_lexikyrgyz">— demo version of a Kyrgyz-English dictionary 🇰🇬</span>
-          </li>
-        </ul>
-
-        <div class="academics-images">
-          <img src="image1.jpg" alt="Academic project 1" class="academics-img">
-          <img src="image2.jpg" alt="Academic project 2" class="academics-img">
-        </div>
-      </section>
-
-      <section id="studies" class="content-section hidden">
-        <h2 data-key="studies_title">Studies</h2>
-        <ul class="timeline">
-          <li class="main-degree"><strong data-key="phd_degree">PhD: Language Policy and Regulation</strong> — <a href="https://www.ehu.eus/en/en-home" target="_blank" rel="noopener"><span data-key="ehu_name">University of the Basque Country</span></a> <em>(<span data-key="phd_dates">2023–2025</span>)</em></li>
-          <li><em data-key="phd_thesis">Dissertation: “Charting global language regulation practices towards language maintenance and revitalisation”</em></li>
-          <li class="main-degree"><strong data-key="ma_lex_degree">MA: Lexicography</strong> — <a href="https://emlex.eu.usc.gal/web/" target="_blank" rel="noopener"><span data-key="emlex_name">Károli Gáspár University & Friedrich-Alexander-Universität</span></a> <em>(<span data-key="ma_lex_dates">2020–2022</span>)</em>, 5/5 (Honourable mention)</li>
-          <li><em data-key="ma_lex_thesis">Thesis: “Towards a typology of online dictionary practices for endangered languages”</em></li>
-          <li class="main-degree"><strong data-key="ma_ling_degree">MA: Linguistics</strong> — <a href="https://www.ehu.eus/en/en-home" target="_blank" rel="noopener"><span data-key="ehu_name2">University of the Basque Country</span></a> <em>(<span data-key="ma_ling_dates">2017–2018</span>)</em></li>
-          <li><em data-key="ma_ling_thesis">Thesis: “Grammatical complexity and its measurement in diachrony”</em></li>
-          <li class="main-degree"><strong data-key="ma_trans_degree">MA: Translation</strong> — <a href="https://dflti.ionio.gr" target="_blank" rel="noopener"><span data-key="ionio_ma_name">Ionian University</span></a> <em>(<span data-key="ma_trans_dates">2015–2017</span>)</em></li>
-          <li class="main-degree"><strong data-key="ba_degree">BA: Translation and Interpretation</strong> — <a href="https://dflti.ionio.gr" target="_blank" rel="noopener"><span data-key="ionio_ba_name">Ionian University</span></a> <em>(<span data-key="ba_dates">2011–2015</span>)</em></li>
-          <li><em data-key="leipzig_exchange">University of Leipzig, exchange student</em> <em>(<span data-key="leipzig_dates">2014–2015</span>)</em></li>
-          <li><em data-key="erasmus_exchange">University of Eastern Finland & University of Lapland, Erasmus</em> <em>(<span data-key="erasmus_dates">2013</span>)</em></li>
-        </ul>
-
-        <h3 data-key="certs_title">Certificates & Courses</h3>
-        <ul class="certs-list">
-          <li>PRINCE2® 7 Foundation in Project Management</li>
-          <li>Scrum Master</li>
-          <li>Risk management – M_o_R Foundation</li>
-          <li>Statistics for linguistics – R</li>
-          <li>Speech pathology</li>
-          <li>Translation Project Management</li>
-          <li>English language teaching licence</li>
-          <li>Driving licence</li>
-        </ul>
-
-        <h3 data-key="conf_title">Conferences (attendance, selected)</h3>
-        <ul class="certs-list">
-          <li><a href="https://commission.europa.eu/translating-europe-forum-tef/translating-europe-forum-2022-2022-11-09_en" target="_blank" rel="noopener">Translating Europe Forum</a>, <span data-key="conf_ec">European Commission</span></li>
-          <li data-key="conf_mt">Machine translation — Low resource languages, online workshop</li>
-          <li><a href="https://lingueletteratureculturestraniere.uniroma3.it/articoli/emlex-congress-new-challenges-in-dictionary-teaching-181825/" target="_blank" rel="noopener">New Challenges in Dictionary Teaching</a>, <span data-key="conf_roma">Roma Tre University</span></li>
-          <li data-key="conf_memorial">The Pandemic, Technology, and Language Revitalization, Memorial University</li>
-          <li><a href="https://www.wiko-greifswald.de/en/programm/allgemeines/veranstaltungskalender/veranstaltung/n/minority-languages-in-the-digital-age-usage-maintenance-and-teaching-59039/" target="_blank" rel="noopener">Minority Languages in the Digital Age</a>, <span data-key="conf_wiko">Alfried Krupp Wissenschaftskolleg</span></li>
-        </ul>
-      </section>
-
-      <section id="work" class="content-section hidden">
-        <h2 data-key="work_title">Work Experience (non-Academic)</h2>
-        <ul class="timeline">
-          <li><strong><a href="https://www.tp.com/en-us/" target="_blank" rel="noopener">Teleperformance</a></strong>, <span data-key="tp_role">data annotator</span> — <span data-key="greece">Greece</span> <em>(<span data-key="tp_dates">September 2025–present</span>)</em></li>
-          <li><strong><a href="https://www.peoplecert.org" target="_blank" rel="noopener">PeopleCert</a></strong>, <span data-key="peoplecert_role">online proctor</span> — <span data-key="greece2">Greece</span> <em>(<span data-key="peoplecert_dates">September 2023–August 2024</span>)</em></li>
-          <li><strong><a href="https://www.kiwi.com/en/" target="_blank" rel="noopener">Kiwi.com</a></strong>, <span data-key="kiwi_role">travel agent</span> — <span data-key="brno">Brno</span> <em>(<span data-key="kiwi_dates">March–August 2023</span>)</em></li>
-          <li><strong><a href="https://commission.europa.eu/about/departments-and-executive-agencies/translation_en" target="_blank" rel="noopener">European Commission, DGT</a></strong>, <span data-key="ec_role">Blue Book trainee</span> — <span data-key="luxembourg">Luxembourg</span> <em>(<span data-key="ec_dates">October 2022–February 2023</span>)</em></li>
-          <li><strong><a href="https://www.sporthotel-achensee.com/de/" target="_blank" rel="noopener">Familienparadies Sporthotel Achensee</a></strong>, <span data-key="achensee_role">customer service</span> — <span data-key="austria">Austria</span> <em>(<span data-key="achensee_dates">Winter season 2019/20</span>)</em></li>
-          <li><strong data-key="military_service">Military service</strong> – <span data-key="military_role">military music department</span> <em>(<span data-key="military_dates">2018–2019</span>)</em></li>
-          <li><strong><a href="https://www.centrodeestudiosbnch.com" target="_blank" rel="noopener"><span data-key="centro_name">Centre of Byzantine, Modern Greek and Cypriot Studies</span></a></strong>, <span data-key="centro_role">secretarial support</span> — <span data-key="granada">Granada</span> <em>(<span data-key="centro_dates">September 2016–January 2017</span>)</em></li>
-          <li><strong data-key="tutor_role">English & Spanish language tutor</strong>, part-time, online and in person <em>(<span data-key="tutor_dates">2012–present</span>)</em></li>
-          <li><strong data-key="freelance_role">Freelance translator</strong>, part-time <em>(<span data-key="freelance_dates">2012–2015</span>)</em></li>
-        </ul>
-
-        <h2 data-key="internships_title">Internships</h2>
-        <ul class="timeline">
-          <li><strong><a href="https://www.fr.brezhoneg.bzh" target="_blank" rel="noopener">Office Public de la Langue Breton</a></strong> — <span data-key="rennes">Rennes</span> <em>(<span data-key="oplb_dates">July–August 2021</span>)</em></li>
-          <li><strong><a href="https://www.lexicon.com.gr/en/" target="_blank" rel="noopener">Lexicon Translations</a></strong> — <span data-key="thessaloniki">Thessaloniki</span> <em>(<span data-key="lexicon_dates">July–August 2015</span>)</em></li>
-          <li><strong><a href="https://www.uni-leipzig.de/en" target="_blank" rel="noopener"><span data-key="leipzig_uni">University of Leipzig</span></a></strong> — <span data-key="leipzig_city">Leipzig</span> <em>(<span data-key="leipzig_intern_dates">March–April 2015</span>)</em></li>
-          <li><strong>Intermundia Traduceri</strong> — <span data-key="constanta">Constanța</span> <em>(<span data-key="intermundia_dates">May–July 2014</span>)</em></li>
-        </ul>
-
-        <h2 data-key="volunteering_title">Volunteering</h2>
-        <ul class="timeline">
-          <li><strong><a href="https://www.anglustudija.lt" target="_blank" rel="noopener">Anglų Kalbos Studija</a></strong>, <span data-key="anglu_role">Camp leader</span> — <span data-key="lithuania">Lithuania</span> <em>(<span data-key="anglu_dates">June–July 2017</span>)</em></li>
-          <li><strong><a href="https://aiesec.org/global-volunteer" target="_blank" rel="noopener">AIESEC Volunteer Project</a></strong>, <span data-key="aiesec_role">Spanish tutor</span> — <span data-key="podgorica">Podgorica</span> <em>(<span data-key="aiesec_dates">February–March 2017</span>)</em></li>
-        </ul>
-      </section>
-
-      <section id="skills" class="content-section hidden">
-        <h2 data-key="skills_title">Skills</h2>
-        <div class="skills-grid">
-          <div>
-            <h3 data-key="lang_title">Languages</h3>
-            <ul class="certs-list">
-              <li><strong data-key="native_label">Native:</strong> <span data-key="native_langs">Greek, English (international)</span></li>
-              <li><strong data-key="fluent_label">Fluent:</strong> <span data-key="fluent_langs">Spanish, German, Italian</span></li>
-              <li><strong data-key="intermediate_label">Intermediate:</strong> <span data-key="intermediate_langs">French, Portuguese</span></li>
-              <li><strong data-key="amateur_label">Amateur:</strong> <span data-key="amateur_langs">Russian, Finnish, Hungarian, Basque</span></li>
-            </ul>
-          </div>
-          <div>
-            <h3 data-key="tech_title">Technology</h3>
-            <ul class="certs-list">
-              <li>Python (NLP), XML, R, PostgreSQL</li>
-              <li>SDL Trados, Memsource</li>
-              <li>CapCut</li>
-              <li>Godot, Unity</li>
-              <li>ECDL certificate</li>
-            </ul>
-          </div>
-          <div>
-            <h3 data-key="misc_title">Misc.</h3>
-            <ul class="certs-list">
-              <li><span data-key="music_skill">Transverse flute (intermediate), Music theory</span></li>
-              <li><span data-key="wikipedia_skill">Wikipedia articles translation (in Greek)</span></li>
-              <li><span data-key="hobbies">Hiking, Solo travelling, Cycling</span></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="content-section hidden">
-        <h2 data-key="contact_title">Contact</h2>
-        <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-          <label for="email" data-key="email_label">Your email</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="topic" data-key="topic_label">Topic</label>
-          <input type="text" id="topic" name="topic" required />
-
-          <label for="message" data-key="message_label">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
-          <button type="submit" data-key="send_button">Send</button>
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <p>
-        <a href="CV_Mikko.pdf" target="_blank" rel="noopener" class="cv-link" data-key="pdf_version">PDF version</a>
-        &nbsp;∙&nbsp;
-        <a href="https://www.linkedin.com/in/mikko-fidias-phd-362379237/" target="_blank" rel="noopener" data-key="linkedin">LinkedIn</a>
-        &nbsp;∙&nbsp;
-        <a href="https://www.instagram.com/mikkoemanon/" target="_blank" rel="noopener" data-key="instagram">Instagram</a>
-        &nbsp;∙&nbsp;
-        <span data-key="location">📍 Thessaloniki, Greece</span>
-      </p>
-    </footer>
-  </div>
-
-  <script data-goatcounter="https://mikko.goatcounter.com/count"
-          async src="//gc.zgo.at/count.js"></script>
+<div class="page-wrapper">
+<header>
+<nav>
+<div class="nav-links">
+<a href="#about" class="nav-link" data-key="about">About</a>
+<a href="#academics" class="nav-link" data-key="academics">Academics</a>
+<div class="dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-key="cv">CV</a>
+<div class="dropdown-menu">
+<a href="#studies" class="dropdown-item" data-key="studies">Studies</a>
+<a href="#work" class="dropdown-item" data-key="work">Work Experience</a>
+<a href="#skills" class="dropdown-item" data-key="skills">Skills</a>
+</div>
+</div>
+<a href="#contact" class="nav-link" data-key="contact">Contact</a>
+</div>
+<div class="lang-switcher">
+<button id="lang-toggle" aria-label="Switch language">🌐</button>
+<div id="lang-dropdown" class="lang-dropdown hidden">
+<button class="lang-option" data-lang="en">English 🇬🇧</button>
+<button class="lang-option" data-lang="es">Español 🇪🇸</button>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<section id="about" class="content-section">
+<h1 data-key="name">Mikko F., PhD</h1>
+<div class="profile-photo">
+<img src="mikko_photo.jpg" alt="Mikko Fidias">
+</div>
+<p class="tagline" data-key="tagline">TECHNOLINGUIST:<br>LANGUAGE • TECH • EDUCATION</p>
+<p data-key="about_text">
+Polyglot, linguist and educator with a passion for applied linguistics, language digitalisation and technology, and language policy for minor and endangered languages. Currently lecturing at Mongolia International University, I have studied at several European universities on various scholarships, lived in over ten countries, and have a background combining academic, freelance (translator, Spanish tutor) and corporate experience. I am also a former Blue Book trainee at the European Commission.<br><br>
+Besides linguistics, I have knowledge of programming for digital humanities and NLP, music theory, and indie game development. I follow the <i>tri-dharma</i> principle, developing myself, my institution, and my students and the local community. Future projects focus on developing digital tools for endangered languages, research in L2 education, and promoting academic leadership.
+</p>
+<p class="hashtags left-align" data-key="hashtags">#polyglot #education #linguistics #translation #lexicography #research #language_teaching #language_policy #project_management #language_technology #nlp #music_theory #content_writing #public_speaking</p>
+</section>
+<section id="academics" class="content-section hidden">
+<h2 data-key="academics_title">Academic Experience</h2>
+<ul class="timeline academic-experience">
+<li class="academic-position"><strong><a href="https://www.miu.edu.mn" target="_blank" rel="noopener"><span data-key="miu_name">Mongolia International University</span></a></strong>, <span data-key="miu_position">Lecturer</span> — <span data-key="remote">remote</span> <em>(<span data-key="miu_dates">Sep 2024–present</span>)</em></li>
+<li class="academic-position"><strong><a href="https://kiuc.kg/en/" target="_blank" rel="noopener"><span data-key="ku_name">Kyrgyzstan University of Language and Culture</span></a></strong>, <span data-key="ku_position">Lecturer</span> — <span data-key="ku_location">Shopokov</span> <em>(<span data-key="ku_dates">Sep 2024–Jun 2025</span>)</em></li>
+</ul>
+<h2 data-key="lessons_title">Courses Taught</h2>
+<div class="lessons-grid">
+<span data-key="course_linguistics">Linguistics</span>
+<span data-key="course_language_tech">Language Technology</span>
+<span data-key="course_l2_methods">L2 Teaching Methods</span>
+<span data-key="course_research_methods">Research Methodology</span>
+<span data-key="course_language_policy">Language Policy</span>
+<span data-key="course_translation">Translation</span>
+<span data-key="course_spanish">Spanish Language</span>
+</div>
+<p data-key="lessons_text_p1">
+Students can access course material in 👉 <a href="https://mikko-lms.netlify.app" target="_blank" rel="noopener noreferrer">this LMS</a>.
+</p>
+<h2 data-key="projects_title">Projects</h2>
+<ul class="projects-list">
+<li>
+<a href="https://mikkoemanon.github.io/PolyglotTranslator/" target="_blank" rel="noopener" class="project-link">
+<u>Polyglot Translator</u>
+</a>
+&nbsp;<span data-key="project_text">— check out my little multilingual translation app portfolio 🙂</span>
+</li>
+<li>
+<a href="https://lexidictionary.github.io/LexiKyrgyz/" target="_blank" rel="noopener" class="project-link">
+<u>LexiKyrgyz</u>
+</a>
+&nbsp;<span data-key="project_lexikyrgyz">— demo version of a Kyrgyz-English dictionary 🇰🇬</span>
+</li>
+</ul>
+<div class="academics-images">
+<img src="image1.jpg" alt="Academic project 1" class="academics-img">
+<img src="image2.jpg" alt="Academic project 2" class="academics-img">
+</div>
+</section>
+<section id="studies" class="content-section hidden">
+<h2 data-key="studies_title">Studies</h2>
+<ul class="timeline">
+<li class="main-degree"><strong data-key="phd_degree">PhD: Language Policy and Regulation</strong> — <a href="https://www.ehu.eus/en/en-home" target="_blank" rel="noopener"><span data-key="ehu_name">University of the Basque Country</span></a> <em>(<span data-key="phd_dates">2023–2025</span>)</em></li>
+<li><em data-key="phd_thesis">Dissertation: "Charting global language regulation practices towards language maintenance and revitalisation"</em></li>
+<li class="main-degree"><strong data-key="ma_lex_degree">MA: Lexicography</strong> — <a href="https://emlex.eu.usc.gal/web/" target="_blank" rel="noopener"><span data-key="emlex_name">Károli Gáspár University & Friedrich-Alexander-Universität</span></a> <em>(<span data-key="ma_lex_dates">2020–2022</span>)</em>, 5/5 (Honourable mention)</li>
+<li><em data-key="ma_lex_thesis">Thesis: "Towards a typology of online dictionary practices for endangered languages"</em></li>
+<li class="main-degree"><strong data-key="ma_ling_degree">MA: Linguistics</strong> — <a href="https://www.ehu.eus/en/en-home" target="_blank" rel="noopener"><span data-key="ehu_name2">University of the Basque Country</span></a> <em>(<span data-key="ma_ling_dates">2017–2018</span>)</em></li>
+<li><em data-key="ma_ling_thesis">Thesis: "Grammatical complexity and its measurement in diachrony"</em></li>
+<li class="main-degree"><strong data-key="ma_trans_degree">MA: Translation</strong> — <a href="https://dflti.ionio.gr" target="_blank" rel="noopener"><span data-key="ionio_ma_name">Ionian University</span></a> <em>(<span data-key="ma_trans_dates">2015–2017</span>)</em></li>
+<li class="main-degree"><strong data-key="ba_degree">BA: Translation and Interpretation</strong> — <a href="https://dflti.ionio.gr" target="_blank" rel="noopener"><span data-key="ionio_ba_name">Ionian University</span></a> <em>(<span data-key="ba_dates">2011–2015</span>)</em></li>
+<li><em data-key="leipzig_exchange">University of Leipzig, exchange student</em> <em>(<span data-key="leipzig_dates">2014–2015</span>)</em></li>
+<li><em data-key="erasmus_exchange">University of Eastern Finland & University of Lapland, Erasmus</em> <em>(<span data-key="erasmus_dates">2013</span>)</em></li>
+</ul>
+<h3 data-key="certs_title">Certificates & Courses</h3>
+<ul class="certs-list">
+<li data-key="cert_prince2">PRINCE2® 7 Foundation in Project Management</li>
+<li data-key="cert_scrum">Scrum Master</li>
+<li data-key="cert_mor">Risk management – M_o_R Foundation</li>
+<li data-key="cert_r">Statistics for linguistics – R</li>
+<li data-key="cert_speech">Speech pathology</li>
+<li data-key="cert_trans_pm">Translation Project Management</li>
+<li data-key="cert_tesol">English language teaching licence</li>
+<li data-key="cert_driving">Driving licence</li>
+</ul>
+<h3 data-key="conf_title">Conferences (attendance, selected)</h3>
+<ul class="certs-list">
+<li><a href="https://www.linkedin.com/posts/de-gruyter-brill_degruyterbrill-webinar-research-activity-7420407458856357888-x1mM?utm_source=share&utm_medium=member_desktop&rcm=ACoAADr3CboBySlEpaRJgIsuahvch7mIIeTAER0" target="_blank" rel="noopener"><span data-key="conf_networking">Academic Networking and Collaboration</span></a>, <span data-key="conf_degruyter">De Gruyter Brill (webinar)</span></li>
+<li><a href="https://commission.europa.eu/translating-europe-forum-tef/translating-europe-forum-2022-2022-11-09_en" target="_blank" rel="noopener">Translating Europe Forum</a>, <span data-key="conf_ec">European Commission</span></li>
+<li data-key="conf_mt">Machine translation — Low resource languages, online workshop</li>
+<li><a href="https://lingueletteratureculturestraniere.uniroma3.it/articoli/emlex-congress-new-challenges-in-dictionary-teaching-181825/" target="_blank" rel="noopener">New Challenges in Dictionary Teaching</a>, <span data-key="conf_roma">Roma Tre University</span></li>
+<li data-key="conf_memorial">The Pandemic, Technology, and Language Revitalization, Memorial University</li>
+<li><a href="https://www.wiko-greifswald.de/en/programm/allgemeines/veranstaltungskalender/veranstaltung/n/minority-languages-in-the-digital-age-usage-maintenance-and-teaching-59039/" target="_blank" rel="noopener">Minority Languages in the Digital Age</a>, <span data-key="conf_wiko">Alfried Krupp Wissenschaftskolleg</span></li>
+</ul>
+</section>
+<section id="work" class="content-section hidden">
+<h2 data-key="work_title">Work Experience (non-Academic)</h2>
+<ul class="timeline">
+<li><strong><a href="https://www.tp.com/en-us/" target="_blank" rel="noopener">Teleperformance</a></strong>, <span data-key="tp_role">data annotator</span> — <span data-key="greece">Greece</span> <em>(<span data-key="tp_dates">September 2025–present</span>)</em></li>
+<li><strong><a href="https://www.peoplecert.org" target="_blank" rel="noopener">PeopleCert</a></strong>, <span data-key="peoplecert_role">online proctor</span> — <span data-key="greece2">Greece</span> <em>(<span data-key="peoplecert_dates">September 2023–August 2024</span>)</em></li>
+<li><strong><a href="https://www.kiwi.com/en/" target="_blank" rel="noopener">Kiwi.com</a></strong>, <span data-key="kiwi_role">travel agent</span> — <span data-key="brno">Brno</span> <em>(<span data-key="kiwi_dates">March–August 2023</span>)</em></li>
+<li><strong><a href="https://commission.europa.eu/about/departments-and-executive-agencies/translation_en" target="_blank" rel="noopener">European Commission, DGT</a></strong>, <span data-key="ec_role">Blue Book trainee</span> — <span data-key="luxembourg">Luxembourg</span> <em>(<span data-key="ec_dates">October 2022–February 2023</span>)</em></li>
+<li><strong><a href="https://www.sporthotel-achensee.com/de/" target="_blank" rel="noopener">Familienparadies Sporthotel Achensee</a></strong>, <span data-key="achensee_role">customer service</span> — <span data-key="austria">Austria</span> <em>(<span data-key="achensee_dates">Winter season 2019/20</span>)</em></li>
+<li><strong data-key="military_service">Military service</strong> – <span data-key="military_role">military music department</span> <em>(<span data-key="military_dates">2018–2019</span>)</em></li>
+<li><strong><a href="https://www.centrodeestudiosbnch.com" target="_blank" rel="noopener"><span data-key="centro_name">Centre of Byzantine, Modern Greek and Cypriot Studies</span></a></strong>, <span data-key="centro_role">secretarial support</span> — <span data-key="granada">Granada</span> <em>(<span data-key="centro_dates">September 2016–January 2017</span>)</em></li>
+<li><strong data-key="tutor_role">English & Spanish language tutor</strong>, part-time, online and in person <em>(<span data-key="tutor_dates">2012–present</span>)</em></li>
+<li><strong data-key="freelance_role">Freelance translator</strong>, part-time <em>(<span data-key="freelance_dates">2012–2015</span>)</em></li>
+</ul>
+<h2 data-key="internships_title">Internships</h2>
+<ul class="timeline">
+<li><strong><a href="https://www.fr.brezhoneg.bzh" target="_blank" rel="noopener">Office Public de la Langue Breton</a></strong> — <span data-key="rennes">Rennes</span> <em>(<span data-key="oplb_dates">July–August 2021</span>)</em></li>
+<li><strong><a href="https://www.lexicon.com.gr/en/" target="_blank" rel="noopener">Lexicon Translations</a></strong> — <span data-key="thessaloniki">Thessaloniki</span> <em>(<span data-key="lexicon_dates">July–August 2015</span>)</em></li>
+<li><strong><a href="https://www.uni-leipzig.de/en" target="_blank" rel="noopener"><span data-key="leipzig_uni">University of Leipzig</span></a></strong> — <span data-key="leipzig_city">Leipzig</span> <em>(<span data-key="leipzig_intern_dates">March–April 2015</span>)</em></li>
+<li><strong>Intermundia Traduceri</strong> — <span data-key="constanta">Constanța</span> <em>(<span data-key="intermundia_dates">May–July 2014</span>)</em></li>
+</ul>
+<h2 data-key="volunteering_title">Volunteering</h2>
+<ul class="timeline">
+<li><strong><a href="https://www.anglustudija.lt" target="_blank" rel="noopener">Anglų Kalbos Studija</a></strong>, <span data-key="anglu_role">Camp leader</span> — <span data-key="lithuania">Lithuania</span> <em>(<span data-key="anglu_dates">June–July 2017</span>)</em></li>
+<li><strong><a href="https://aiesec.org/global-volunteer" target="_blank" rel="noopener">AIESEC Volunteer Project</a></strong>, <span data-key="aiesec_role">Spanish tutor</span> — <span data-key="podgorica">Podgorica</span> <em>(<span data-key="aiesec_dates">February–March 2017</span>)</em></li>
+</ul>
+</section>
+<section id="skills" class="content-section hidden">
+<h2 data-key="skills_title">Skills</h2>
+<div class="skills-grid">
+<div>
+<h3 data-key="lang_title">Languages</h3>
+<ul class="certs-list">
+<li><strong data-key="native_label">Native:</strong> <span data-key="native_langs">Greek, English (international)</span></li>
+<li><strong data-key="fluent_label">Fluent:</strong> <span data-key="fluent_langs">Spanish, German, Italian</span></li>
+<li><strong data-key="intermediate_label">Intermediate:</strong> <span data-key="intermediate_langs">French, Portuguese</span></li>
+<li><strong data-key="amateur_label">Amateur:</strong> <span data-key="amateur_langs">Russian, Finnish, Hungarian, Basque</span></li>
+</ul>
+</div>
+<div>
+<h3 data-key="tech_title">Technology</h3>
+<ul class="certs-list">
+<li>Python (NLP), XML, R, PostgreSQL</li>
+<li>SDL Trados, Memsource</li>
+<li>CapCut</li>
+<li>Godot, Unity</li>
+<li>ECDL certificate</li>
+</ul>
+</div>
+<div>
+<h3 data-key="misc_title">Misc.</h3>
+<ul class="certs-list">
+<li><span data-key="music_skill">Transverse flute (intermediate), Music theory</span></li>
+<li><span data-key="wikipedia_skill">Wikipedia articles translation (in Greek)</span></li>
+<li><span data-key="hobbies">Hiking, Solo travelling, Cycling</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="contact" class="content-section hidden">
+<h2 data-key="contact_title">Contact</h2>
+<form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+<label for="email" data-key="email_label">Your email</label>
+<input type="email" id="email" name="email" required />
+<label for="topic" data-key="topic_label">Topic</label>
+<input type="text" id="topic" name="topic" required />
+<label for="message" data-key="message_label">Message</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+<button type="submit" data-key="send_button">Send</button>
+</form>
+</section>
+</main>
+<footer>
+<p>
+<a href="CV_Mikko.pdf" target="_blank" rel="noopener" class="cv-link" data-key="pdf_version">PDF version</a>
+&nbsp;∙&nbsp;
+<a href="https://www.linkedin.com/in/mikko-fidias-phd-362379237/" target="_blank" rel="noopener" data-key="linkedin">LinkedIn</a>
+&nbsp;∙&nbsp;
+<a href="https://www.instagram.com/mikkoemanon/" target="_blank" rel="noopener" data-key="instagram">Instagram</a>
+&nbsp;∙&nbsp;
+<span data-key="location">📍 Thessaloniki, Greece</span>
+</p>
+</footer>
+</div>
+<script data-goatcounter="https://mikko.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
