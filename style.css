@@ -45,7 +45,11 @@ margin: 0 auto;
 width: 100%;
 }
 
-.nav-links { display: flex; gap: 1.8rem; align-items: center; }
+.nav-links { 
+display: flex; 
+gap: 1.8rem; 
+align-items: center; 
+}
 
 .lang-switcher { position: relative; }
 
@@ -180,14 +184,12 @@ margin-bottom: 1.2rem; padding-left: 1.4rem; position: relative;
 line-height: 1.5;
 }
 
-/* Main degrees AND academic positions get arrows */
 .timeline li.main-degree::before,
 .timeline li.academic-position::before {
 content: '→'; position: absolute; left: 0; color: var(--accent);
 font-weight: 600;
 }
 
-/* Other timeline items (theses, exchanges, etc.) get no arrow */
 .timeline li:not(.main-degree):not(.academic-position)::before {
 content: none;
 }
@@ -219,9 +221,16 @@ font-weight: 500;
 }
 
 .lessons-grid span {
-background: #f8f9fc; padding: 0.6rem 0.8rem;
-border-radius: 6px; text-align: center;
+background: #f8f9fc; 
+padding: 0.8rem 0.8rem; 
+border-radius: 6px; 
+text-align: center;
 color: var(--accent);
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 60px;
+text-align: center;
 }
 
 .certs-list {
@@ -309,6 +318,11 @@ margin: 0.4rem 0 1.8rem;
 @media (max-width: 600px) {
 .profile-photo {
 max-width: 240px;
+}
+.nav-links {
+gap: 1rem;
+flex-wrap: wrap;
+justify-content: center;
 }
 .lessons-grid {
 grid-template-columns: 1fr 1fr;
