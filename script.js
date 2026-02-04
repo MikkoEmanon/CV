@@ -57,8 +57,10 @@ leipzig_exchange: "University of Leipzig, exchange student",
 leipzig_dates: "2014–2015",
 erasmus_exchange: "University of Eastern Finland & University of Lapland, Erasmus",
 erasmus_dates: "2013",
-honourable_mention: "(Honourable mention)",
 certs_title: "Certificates & Courses",
+cert_gda: "Google Data Analytics Certificate",
+cert_gpm: "Google Project Management Certificate",
+cert_gdm: "Google Digital Marketing & E-commerce Certificate",
 cert_prince2: "PRINCE2® 7 Foundation in Project Management",
 cert_scrum: "Scrum Master",
 cert_mor: "Risk management – M_o_R Foundation",
@@ -98,9 +100,9 @@ centro_role: "secretarial support",
 granada: "Granada",
 centro_dates: "September 2016–January 2017",
 tutor_role: "English & Spanish language tutor",
-tutor_dates: "2012–present",
+tutor_dates: "part-time, online and in person (2012–present)",
 freelance_role: "Freelance translator",
-freelance_dates: "2012–2015",
+freelance_dates: "part-time (2012–2015)",
 internships_title: "Internships",
 rennes: "Rennes",
 oplb_dates: "July–August 2021",
@@ -201,8 +203,10 @@ leipzig_exchange: "Universidad de Leipzig, estudiante de intercambio",
 leipzig_dates: "2014–2015",
 erasmus_exchange: "Universidad de Finlandia Oriental y Universidad de Laponia, Erasmus",
 erasmus_dates: "2013",
-honourable_mention: "(mención honorífica)",
 certs_title: "Certificados y Cursos",
+cert_gda: "Certificado de Google Data Analytics",
+cert_gpm: "Certificado de Google Project Management",
+cert_gdm: "Certificado de Google Marketing Digital y Comercio Electrónico",
 cert_prince2: "PRINCE2® 7 Fundamentos en gestión de proyectos",
 cert_scrum: "Scrum Master",
 cert_mor: "Gestión de riesgos – M_o_R Foundation",
@@ -242,9 +246,9 @@ centro_role: "apoyo secretarial",
 granada: "Granada",
 centro_dates: "septiembre 2016–enero 2017",
 tutor_role: "Tutor de inglés y español",
-tutor_dates: "2012–presente",
+tutor_dates: "a tiempo parcial, online y presencial (2012–presente)",
 freelance_role: "Traductor freelance",
-freelance_dates: "2012–2015",
+freelance_dates: "a tiempo parcial (2012–2015)",
 internships_title: "Prácticas",
 rennes: "Rennes",
 oplb_dates: "julio–agosto 2021",
@@ -291,91 +295,96 @@ location: "📍 Salónica, Grecia"
 };
 
 const sections = {
-about: document.getElementById('about'),
-academics: document.getElementById('academics'),
-studies: document.getElementById('studies'),
-work: document.getElementById('work'),
-skills: document.getElementById('skills'),
-contact: document.getElementById('contact')
+  about: document.getElementById("about"),
+  academics: document.getElementById("academics"),
+  studies: document.getElementById("studies"),
+  work: document.getElementById("work"),
+  skills: document.getElementById("skills"),
+  contact: document.getElementById("contact"),
 };
 
 function showSection(sectionId) {
-if (!sections[sectionId]) sectionId = 'about';
-Object.values(sections).forEach(s => s.classList.add('hidden'));
-sections[sectionId].classList.remove('hidden');
-history.pushState(null, '', `#${sectionId}`);
-document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-const link = document.querySelector(`[href="#${sectionId}"]`);
-if (link) link.classList.add('active');
+  if (!sections[sectionId]) sectionId = "about";
+  Object.values(sections).forEach((s) => s.classList.add("hidden"));
+  sections[sectionId].classList.remove("hidden");
+  history.pushState(null, "", `#${sectionId}`);
+  document
+    .querySelectorAll(".nav-link")
+    .forEach((l) => l.classList.remove("active"));
+  const link = document.querySelector(`[href="#${sectionId}"]`);
+  if (link) link.classList.add("active");
 }
 
-document.querySelectorAll('.nav-link:not(.dropdown-toggle), .dropdown-item').forEach(link => {
-link.addEventListener('click', e => {
-e.preventDefault();
-const target = e.target.getAttribute('href').substring(1);
-showSection(target);
-});
+document
+  .querySelectorAll(".nav-link:not(.dropdown-toggle), .dropdown-item")
+  .forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const target = e.target.getAttribute("href").substring(1);
+      showSection(target);
+    });
+  });
+
+const cvToggle = document.querySelector(".dropdown-toggle");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+cvToggle.addEventListener("click", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  document.querySelector(".dropdown").classList.toggle("open");
 });
 
-const cvToggle = document.querySelector('.dropdown-toggle');
-const dropdownMenu = document.querySelector('.dropdown-menu');
-cvToggle.addEventListener('click', e => {
-e.preventDefault();
-e.stopPropagation();
-document.querySelector('.dropdown').classList.toggle('open');
+document.addEventListener("click", () => {
+  document.querySelector(".dropdown").classList.remove("open");
 });
 
-document.addEventListener('click', () => {
-document.querySelector('.dropdown').classList.remove('open');
+const langToggle = document.getElementById("lang-toggle");
+const langDropdown = document.getElementById("lang-dropdown");
+langToggle.innerHTML = "🌐";
+langToggle.addEventListener("click", (e) => {
+  e.stopPropagation();
+  langDropdown.classList.toggle("hidden");
 });
 
-const langToggle = document.getElementById('lang-toggle');
-const langDropdown = document.getElementById('lang-dropdown');
-langToggle.innerHTML = '🌐';
-langToggle.addEventListener('click', e => {
-e.stopPropagation();
-langDropdown.classList.toggle('hidden');
+document.addEventListener("click", (e) => {
+  if (!langToggle.contains(e.target) && !langDropdown.contains(e.target)) {
+    langDropdown.classList.add("hidden");
+  }
+  if (!cvToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+    document.querySelector(".dropdown").classList.remove("open");
+  }
 });
 
-document.addEventListener('click', e => {
-if (!langToggle.contains(e.target) && !langDropdown.contains(e.target)) {
-langDropdown.classList.add('hidden');
-}
-if (!cvToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
-document.querySelector('.dropdown').classList.remove('open');
-}
-});
-
-document.querySelectorAll('.lang-option').forEach(btn => {
-btn.addEventListener('click', () => {
-currentLang = btn.getAttribute('data-lang');
-localStorage.setItem('preferredLang', currentLang);
-updateContent();
-langDropdown.classList.add('hidden');
-});
+document.querySelectorAll(".lang-option").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    currentLang = btn.getAttribute("data-lang");
+    localStorage.setItem("preferredLang", currentLang);
+    updateContent();
+    langDropdown.classList.add("hidden");
+  });
 });
 
 function updateContent() {
-document.querySelectorAll('[data-key]').forEach(el => {
-const key = el.getAttribute('data-key');
-if (translations[currentLang][key] !== undefined) {
-el.innerHTML = translations[currentLang][key];
-}
-});
-document.title = 'Mikko CV';
+  document.querySelectorAll("[data-key]").forEach((el) => {
+    const key = el.getAttribute("data-key");
+    if (translations[currentLang][key] !== undefined) {
+      el.innerHTML = translations[currentLang][key];
+    }
+  });
+  document.title = "Mikko CV";
 }
 
-window.addEventListener('load', () => {
-langToggle.innerHTML = '🌐';
-const saved = localStorage.getItem('preferredLang');
-if (saved && translations[saved]) currentLang = saved;
-else if (translations[navigator.language.slice(0,2)]) currentLang = navigator.language.slice(0,2);
-const hash = window.location.hash.substring(1);
-showSection(hash || 'about');
-updateContent();
+window.addEventListener("load", () => {
+  langToggle.innerHTML = "🌐";
+  const saved = localStorage.getItem("preferredLang");
+  if (saved && translations[saved]) currentLang = saved;
+  else if (translations[navigator.language.slice(0, 2)])
+    currentLang = navigator.language.slice(0, 2);
+  const hash = window.location.hash.substring(1);
+  showSection(hash || "about");
+  updateContent();
 });
 
-window.addEventListener('popstate', () => {
-const hash = window.location.hash.substring(1);
-showSection(hash || 'about');
+window.addEventListener("popstate", () => {
+  const hash = window.location.hash.substring(1);
+  showSection(hash || "about");
 });
