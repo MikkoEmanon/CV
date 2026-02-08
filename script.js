@@ -13,6 +13,7 @@ tagline: "TECHNOLINGUIST:<br>LANGUAGE • TECH • EDUCATION",
 about_text: `Polyglot, linguist and educator with a passion for applied linguistics, language digitalisation and technology, and language policy for minor and endangered languages. Currently lecturing at Mongolia International University, I have studied at several European universities on various scholarships, lived in over ten countries, and have a background combining academic, freelance (translator, Spanish tutor) and corporate experience. I am also a former Blue Book trainee at the European Commission.<br><br>
 Besides linguistics, I have knowledge of programming for digital humanities and NLP, music theory, project management, and indie game development. I follow the <i>tri-dharma</i> principle, developing myself, my discipline, and my institution, students and the local community. Future projects focus on developing digital tools for endangered languages, research in L2 education, and promoting academic leadership.`,
 hashtags: "#polyglot #education #linguistics #translation #lexicography #research #language_teaching #language_policy #project_management #language_technology #nlp #music_theory #content_writing #public_speaking",
+play_store_link: "View my apps on Google Play Store",
 academics_title: "Academic Experience",
 miu_name: "Mongolia International University",
 miu_position: "Lecturer",
@@ -31,8 +32,10 @@ course_language_policy: "Language Policy",
 course_translation: "Translation",
 course_spanish: "Spanish Language",
 lessons_text_p1: 'Students can access course material in 👉 <a href="https://mikko-lms.netlify.app" target="_blank" rel="noopener noreferrer">this LMS</a>.',
-projects_title: "Projects",
-project_text: "— check out my little multilingual translation app portfolio 🙂",
+projects_title: "Portfolio",
+project_glossari: "— vocabulary trainer for language learners (Android app)",
+project_scriptmaster: "— learn and practice various scripts from around the world (Android app)",
+project_text: "— multilingual translator with free APIs",
 project_lexikyrgyz: "— demo version of a Kyrgyz-English dictionary 🇰🇬",
 studies_title: "Studies",
 phd_degree: "PhD: Language Policy and Regulation",
@@ -159,6 +162,7 @@ tagline: "TECNOLINGÜÍSTA:<br>IDIOMA • TECNOLOGÍA • EDUCACIÓN",
 about_text: `Lingüista, políglota y educador apasionado por la lingüística aplicada, la digitalización y la tecnología de lenguas, y la política lingüística para lenguas minoritarias/amenazadas. Actualmente imparto clases en la Universidad Internacional de Mongolia; he estudiado en varias universidades europeas con becas diversas, he vivido en más de diez países y mi trayectoria combina experiencia académica, freelance (traductor, tutor de español) y corporativa; también he sido becario Blue Book en la Comisión Europea.<br><br>
 Además de la lingüística, tengo conocimientos de programación para humanidades digitales y PLN, teoría musical, gestión de proyectos, y desarrollo de videojuegos indie. Sigo el principio <i>tri-dharma</i>, desarrollándome a mí mismo, a mi ciencia, y a mi institución, alumnos y la comunidad local. Mis proyectos futuros se centran en el desarrollo de herramientas digitales para lenguas amenazadas, investigación en enseñanza de L2 y promoción del liderazgo académico.`,
 hashtags: "#polyglot #education #linguistics #translation #lexicography #research #language_teaching #language_policy #project_management #language_technology #nlp #music_theory #content_writing #public_speaking",
+play_store_link: "Ver mis aplicaciones en Google Play Store",
 academics_title: "Experiencia Académica",
 miu_name: "Universidad Internacional de Mongolia",
 miu_position: "docente",
@@ -177,8 +181,10 @@ course_language_policy: "Política lingüística",
 course_translation: "Traducción",
 course_spanish: "Español para extranjeros",
 lessons_text_p1: 'Los estudiantes pueden acceder al material de los cursos en 👉 <a href="https://mikko-lms.netlify.app" target="_blank" rel="noopener noreferrer">este LMS</a>.',
-projects_title: "Proyectos",
-project_text: "— ¡Echen un vistazo a mi pequeña app de traducción multilingüe! 🙂",
+projects_title: "Portfolio",
+project_glossari: "— entrenador de vocabulario para estudiantes de idiomas (aplicación Android)",
+project_scriptmaster: "— aprende y practica diversos sistemas de escritura de todo el mundo (aplicación Android)",
+project_text: "— traductor multilingüe con APIs gratuitas",
 project_lexikyrgyz: "— versión demo de un diccionario kirguís-inglés 🇰🇬",
 studies_title: "Estudios",
 phd_degree: "Doctorado: Política y Regulación Lingüística",
@@ -293,98 +299,87 @@ instagram: "Instagram",
 location: "📍 Salónica, Grecia"
 }
 };
-
 const sections = {
-  about: document.getElementById("about"),
-  academics: document.getElementById("academics"),
-  studies: document.getElementById("studies"),
-  work: document.getElementById("work"),
-  skills: document.getElementById("skills"),
-  contact: document.getElementById("contact"),
+about: document.getElementById("about"),
+academics: document.getElementById("academics"),
+studies: document.getElementById("studies"),
+work: document.getElementById("work"),
+skills: document.getElementById("skills"),
+contact: document.getElementById("contact"),
 };
-
 function showSection(sectionId) {
-  if (!sections[sectionId]) sectionId = "about";
-  Object.values(sections).forEach((s) => s.classList.add("hidden"));
-  sections[sectionId].classList.remove("hidden");
-  history.pushState(null, "", `#${sectionId}`);
-  document
-    .querySelectorAll(".nav-link")
-    .forEach((l) => l.classList.remove("active"));
-  const link = document.querySelector(`[href="#${sectionId}"]`);
-  if (link) link.classList.add("active");
-}
-
+if (!sections[sectionId]) sectionId = "about";
+Object.values(sections).forEach((s) => s.classList.add("hidden"));
+sections[sectionId].classList.remove("hidden");
+history.pushState(null, "", `#${sectionId}`);
 document
-  .querySelectorAll(".nav-link:not(.dropdown-toggle), .dropdown-item")
-  .forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const target = e.target.getAttribute("href").substring(1);
-      showSection(target);
-    });
-  });
-
+.querySelectorAll(".nav-link")
+.forEach((l) => l.classList.remove("active"));
+const link = document.querySelector(`[href="#${sectionId}"]`);
+if (link) link.classList.add("active");
+}
+document
+.querySelectorAll(".nav-link:not(.dropdown-toggle), .dropdown-item")
+.forEach((link) => {
+link.addEventListener("click", (e) => {
+e.preventDefault();
+const target = e.target.getAttribute("href").substring(1);
+showSection(target);
+});
+});
 const cvToggle = document.querySelector(".dropdown-toggle");
 const dropdownMenu = document.querySelector(".dropdown-menu");
 cvToggle.addEventListener("click", (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-  document.querySelector(".dropdown").classList.toggle("open");
+e.preventDefault();
+e.stopPropagation();
+document.querySelector(".dropdown").classList.toggle("open");
 });
-
 document.addEventListener("click", () => {
-  document.querySelector(".dropdown").classList.remove("open");
+document.querySelector(".dropdown").classList.remove("open");
 });
-
 const langToggle = document.getElementById("lang-toggle");
 const langDropdown = document.getElementById("lang-dropdown");
 langToggle.innerHTML = "🌐";
 langToggle.addEventListener("click", (e) => {
-  e.stopPropagation();
-  langDropdown.classList.toggle("hidden");
+e.stopPropagation();
+langDropdown.classList.toggle("hidden");
 });
-
 document.addEventListener("click", (e) => {
-  if (!langToggle.contains(e.target) && !langDropdown.contains(e.target)) {
-    langDropdown.classList.add("hidden");
-  }
-  if (!cvToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
-    document.querySelector(".dropdown").classList.remove("open");
-  }
-});
-
-document.querySelectorAll(".lang-option").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    currentLang = btn.getAttribute("data-lang");
-    localStorage.setItem("preferredLang", currentLang);
-    updateContent();
-    langDropdown.classList.add("hidden");
-  });
-});
-
-function updateContent() {
-  document.querySelectorAll("[data-key]").forEach((el) => {
-    const key = el.getAttribute("data-key");
-    if (translations[currentLang][key] !== undefined) {
-      el.innerHTML = translations[currentLang][key];
-    }
-  });
-  document.title = "Mikko CV";
+if (!langToggle.contains(e.target) && !langDropdown.contains(e.target)) {
+langDropdown.classList.add("hidden");
 }
-
-window.addEventListener("load", () => {
-  langToggle.innerHTML = "🌐";
-  const saved = localStorage.getItem("preferredLang");
-  if (saved && translations[saved]) currentLang = saved;
-  else if (translations[navigator.language.slice(0, 2)])
-    currentLang = navigator.language.slice(0, 2);
-  const hash = window.location.hash.substring(1);
-  showSection(hash || "about");
-  updateContent();
+if (!cvToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+document.querySelector(".dropdown").classList.remove("open");
+}
 });
-
+document.querySelectorAll(".lang-option").forEach((btn) => {
+btn.addEventListener("click", () => {
+currentLang = btn.getAttribute("data-lang");
+localStorage.setItem("preferredLang", currentLang);
+updateContent();
+langDropdown.classList.add("hidden");
+});
+});
+function updateContent() {
+document.querySelectorAll("[data-key]").forEach((el) => {
+const key = el.getAttribute("data-key");
+if (translations[currentLang][key] !== undefined) {
+el.innerHTML = translations[currentLang][key];
+}
+});
+document.title = "Mikko CV";
+}
+window.addEventListener("load", () => {
+langToggle.innerHTML = "🌐";
+const saved = localStorage.getItem("preferredLang");
+if (saved && translations[saved]) currentLang = saved;
+else if (translations[navigator.language.slice(0, 2)])
+currentLang = navigator.language.slice(0, 2);
+const hash = window.location.hash.substring(1);
+showSection(hash || "about");
+updateContent();
+});
 window.addEventListener("popstate", () => {
-  const hash = window.location.hash.substring(1);
-  showSection(hash || "about");
+const hash = window.location.hash.substring(1);
+showSection(hash || "about");
 });
