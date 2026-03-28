@@ -399,6 +399,8 @@ window.addEventListener("load", () => {
   const hash = window.location.hash.substring(1);
   showSection(hash || "about");
   updateContent();
+
+  window.scrollTo({ top: 0, left: 0, behavior: "instant" });
 });
 
 window.addEventListener("popstate", () => {
