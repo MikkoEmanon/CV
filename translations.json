@@ -15,7 +15,7 @@
     "academics_title": "Academic Experience",
     "miu_name": "Mongolia International University",
     "miu_position": "Lecturer",
-    "remote": "remote",
+    "remote": "remote & Ulaanbaatar",
     "miu_dates": "Sep 2024–present",
     "ku_name": "Kyrgyzstan University of Language and Culture",
     "ku_position": "Lecturer",
@@ -85,7 +85,7 @@
     "work_title": "Work Experience (non-Academic)",
     "tp_role": "data annotator",
     "greece": "Greece",
-    "tp_dates": "September 2025–present",
+    "tp_dates": "September 2025–August 2026",
     "peoplecert_role": "online proctor",
     "greece2": "Greece",
     "peoplecert_dates": "September 2023–August 2024",
@@ -150,7 +150,7 @@
     "pdf_version": "PDF version",
     "linkedin": "LinkedIn",
     "instagram": "Instagram",
-    "location": "📍 Thessaloniki, Greece"
+    "location": "📍 Ulaanbaatar, Mongolia"
   },
   "es": {
     "about": "Sobre mí",
@@ -168,7 +168,7 @@
     "academics_title": "Experiencia Académica",
     "miu_name": "Universidad Internacional de Mongolia",
     "miu_position": "docente",
-    "remote": "remoto",
+    "remote": "remoto & Ulán Bator",
     "miu_dates": "septiembre 2024–presente",
     "ku_name": "Universidad de Lengua y Cultura de Kirguistán",
     "ku_position": "docente",
@@ -238,7 +238,7 @@
     "work_title": "Experiencia Laboral (no académica)",
     "tp_role": "anotador de datos",
     "greece": "Grecia",
-    "tp_dates": "septiembre 2025–presente",
+    "tp_dates": "septiembre 2025–agosto 2026",
     "peoplecert_role": "supervisor de exámenes en línea",
     "greece2": "Grecia",
     "peoplecert_dates": "septiembre 2023–agosto 2024",
@@ -303,7 +303,7 @@
     "pdf_version": "Versión PDF",
     "linkedin": "LinkedIn",
     "instagram": "Instagram",
-    "location": "📍 Salónica, Grecia"
+    "location": "📍 Ulán Bator, Mongolia"
   },
   "fr": {
     "about": "À propos",
@@ -321,7 +321,7 @@
     "academics_title": "Expérience académique",
     "miu_name": "Université Internationale de Mongolie",
     "miu_position": "Chargé de cours",
-    "remote": "à distance",
+    "remote": "à distance & Oulan-Bator",
     "miu_dates": "septembre 2024–présent",
     "ku_name": "Université de Langue et Culture du Kirghizistan",
     "ku_position": "Chargé de cours",
@@ -391,7 +391,7 @@
     "work_title": "Expérience professionnelle (non académique)",
     "tp_role": "annotateur de données",
     "greece": "Grèce",
-    "tp_dates": "septembre 2025–présent",
+    "tp_dates": "septembre 2025–août 2026",
     "peoplecert_role": "surveillant d'examens en ligne",
     "greece2": "Grèce",
     "peoplecert_dates": "septembre 2023–août 2024",
@@ -456,7 +456,7 @@
     "pdf_version": "Version PDF",
     "linkedin": "LinkedIn",
     "instagram": "Instagram",
-    "location": "📍 Thessalonique, Grèce"
+    "location": "📍 Oulan-Bator, Mongolie"
   },
   "ru": {
     "about": "Обо мне",
@@ -474,7 +474,7 @@
     "academics_title": "Академический опыт",
     "miu_name": "Международный Университет Монголии",
     "miu_position": "Преподаватель",
-    "remote": "дистанционно",
+    "remote": "дистанционно & Улан-Батор",
     "miu_dates": "сент. 2024 — настоящее время",
     "ku_name": "Кыргызский Университет Языка и Культуры",
     "ku_position": "Преподаватель",
@@ -544,7 +544,7 @@
     "work_title": "Опыт работы (не связанный с научной деятельностью)",
     "tp_role": "аннотатор данных",
     "greece": "Греция",
-    "tp_dates": "сентябрь 2025 — настоящее время",
+    "tp_dates": "сентябрь 2025 — август 2026",
     "peoplecert_role": "онлайн-проктор",
     "greece2": "Греция",
     "peoplecert_dates": "сентябрь 2023 — август 2024",
@@ -609,6 +609,6 @@
     "pdf_version": "PDF-версия",
     "linkedin": "LinkedIn",
     "instagram": "Инстаграм",
-    "location": "📍 Салоники, Греция"
+    "location": "📍 Улан-Батор, Монголия"
   }
 }
