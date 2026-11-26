@@ -54,7 +54,7 @@ transition: color 0.2s ease;
 .lang-dropdown {
 position: absolute; top: 100%; right: 0; background: white;
 border: 1px solid var(--border); border-radius: var(--radius);
-box-shadow: 0 6px 16px var(--shadow); min-width: 160px;
+box-shadow: 0 6px 16px var(--shadow); width: max-content; min-width: 120px;
 margin-top: 6px; z-index: 101; padding: 0.4rem 0;
 }
 .lang-dropdown.hidden { display: none; }
